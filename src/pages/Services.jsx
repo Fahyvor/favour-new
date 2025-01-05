@@ -1,6 +1,6 @@
 import webIcon from '../assets/webIcon.jpg'
 import mobileIcon from '../assets/mobileIcon.png'
-import web3Icon from '../assets/web3Icon.jpg'
+import web3Icon from '../assets/web3Icon.png'
 
 const Services = () => {
   return (

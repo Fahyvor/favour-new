@@ -7,6 +7,7 @@ import Experience from './pages/Experience'
 import Success from './pages/Success'
 import Contact from './pages/Contact'
 import Footer from './pages/Footer'
+import About from './pages/About'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { gsap } from 'gsap';
@@ -31,8 +32,8 @@ const App = () => {
 
   return (
     <div className='animated-background h-screen w-full'>
-      <Nav />
       <Router>
+        <Nav />
         <Routes>
           <Route path="/" element={<Body />} />
           <Route path='/services' element={<Services />} />
@@ -40,9 +41,10 @@ const App = () => {
           <Route path='/experience' element={<Experience />} />
           <Route path='/success' element={<Success />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/about' element={<About />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   )
 }
