@@ -70,8 +70,8 @@ html {
 
  body {
     font-family: 'Syne', sans-serif;
-    /* background: var(--color-white); */
-    color: black;
+    background: black;
+    color: white;
     line-height: 1.7;
  }
 
