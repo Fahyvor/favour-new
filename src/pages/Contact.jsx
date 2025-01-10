@@ -42,7 +42,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='px-20 md:px-10 pt-28 pb-6'>
+    <div className='lg:px-20 md:px-10 px-6 lg:pt-28 md:pt-28 pt-3 pb-6'>
        <div className='toastify-message'>
           <ToastContainer />
       </div>
@@ -111,7 +111,7 @@ const Contact = () => {
           </a>
         </div>
 
-        <div className="lg:w-3/4 md:w-3/4 w-full bg-dark-favour rounded-3xl p-12">
+        <div className="lg:w-3/4 md:w-3/4 w-full bg-dark-favour rounded-3xl lg:p-12 md:p-8 p-6 lg:mt-0 md:mt-0 mt-6">
             <p className='lg:text-5xl md:text-5xl text-4xl lg:w-3/4 md:w-3/4 w-full'>Let&apos;s work <span className='text-blue-800'>together.</span></p>
 
             <form className='flex flex-col gap-6 py-8' onSubmit={sendEmail}>

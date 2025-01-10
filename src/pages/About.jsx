@@ -19,15 +19,15 @@ const About = () => {
             </div>
 
             <div className="text-white lg:w-3/4 md:w-3/4 w-full lg:p-6 md:p-6 p-0 flex flex-col lg:gap-6 md:gap-6 gap-5" data="aos" data-aos="zoom-in-right">
-              <div className='flex items-center'>
-                <img src={Star2} alt='star' className='w-20 h-10 object-contain'/>
+              <div className='flex items-center lg:gap-0 md:gap-0 gap-3'>
+                <img src={Star2} alt='star' className='lg:w-20 md:w-20 w-10 lg:h-10 md:h-20 h-10 object-contain'/>
                 <p className="lg:text-7xl md:text-6xl text-4xl">SELF SUMMARY</p>
-                <img src={Star2} alt='star' className='w-20 h-10 object-contain'/>
+                <img src={Star2} alt='star' className='lg:w-20 md:w-20 w-10 lg:h-10 md:h-20 h-10 object-contain'/>
               </div>
 
               <div className='bg-dark-favour rounded-xl p-6'>
                 <p>FAVOUR OKAFOR</p>
-                <p>I am a Nigerian-based software developer with a focus on full stack web development and blockchain development. I have a diverse range of experience having worked across various fields and industries</p>
+                <p className='text-justify'>I am a Nigerian-based software developer with a focus on full stack web development and blockchain development. I have a diverse range of experience having worked across various fields and industries</p>
               </div>
             </div>
           </div>
