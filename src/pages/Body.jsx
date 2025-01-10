@@ -9,6 +9,7 @@ import Web3Icon from '../assets/web3Icon.png';
 import { FaCode } from "react-icons/fa6";
 import { BsBrowserEdge } from "react-icons/bs";
 import { CiTwitter } from 'react-icons/ci';
+import { useNavigate } from 'react-router-dom';
 // import { FaCirclePlay } from "react-icons/fa6";
 // import { gsap } from "gsap";
 
@@ -52,11 +53,13 @@ const Body = () => {
   //   }
   // }, [splitText]); // This effect runs when splitText changes
 
+  const navigate = useNavigate();
+
   return (
     <div className='bg-black w-full lg:px-16 md:px-12 px-5 pt-28 pb-6'>
       <div className="body flex gap-8 w-full lg:flex-row md:flex-row flex-col py-5" data="aos" data-aos="zoom-in">
-        <div className='body-left bg-dark-favour rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex'>
-          <div className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-3 md:gap-4 gap-8 lg:px-6 md:px-4 px-8 lg:p-0 md:p-0 p-6">
+        <div className='body-left  rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex'>
+          <div className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-6 md:gap-4 gap-8 lg:px-12 md:px-4 px-8 rounded-3xl py-12 bg-dark-favour ">
             <div className="body-left-image rounded-tl-3xl rounded-br-3xl flex lg:w-[18rem] md:w-[18rem] w-[18rem] lg:h-[15rem] md:h-[15rem] h-[16.5rem] overflow-hidden">
               <img src={Fahyvor} alt="Fahyvor" className='object-cover'/>
             </div>
@@ -76,7 +79,7 @@ const Body = () => {
             <p className='text-sm animate-marquee'>| LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | LATEST WORK AND <b>FEATURED</b> | </p>
           </div>
           <div className="flex lg:flex-row md:flex-row flex-col gap-6 py-5">
-            <div className="bg-dark-favour p-2 rounded-3xl lg:w-1/2 md:w-1/2 w-full">
+            <div className="bg-dark-favour p-2 rounded-3xl lg:w-1/2 md:w-1/2 w-full cursor-pointer" onClick={() => navigate('/credentials')}>
               <div className="">
                 <img src={Signature} alt="" className='filter invert w-1/2 mx-auto my-6' /> 
               </div>
@@ -91,7 +94,7 @@ const Body = () => {
               </div>
             </div>
 
-            <div className="bg-dark-favour p-2 lg:w-1/2 md:w-1/2 w-full rounded-3xl flex flex-col gap-7 py-5">
+            <div className="bg-dark-favour p-2 lg:w-1/2 md:w-1/2 w-full rounded-3xl flex flex-col gap-7 py-5 cursor-pointer" onClick={() => (navigate('/portfolio'))}>
               <div className="flex flex-col items-center py-3">
                 <p className='text-4xl opacity-40 font-bold text-white'>MY WORKS</p>
                 <img src={worksThumnail} alt="works" className='w-1/2 z-40 -mt-3 rounded-tl-xl rounded-br-xl'/>
@@ -122,7 +125,7 @@ const Body = () => {
           </div>
         </div>
 
-        <div className="bg-dark-favour rounded-3xl lg:w-2/4 md:w-2/4 w-full p-6 flex flex-col lg:gap-6 md:gap-6 gap-24 justify-between">
+        <div className="bg-dark-favour rounded-3xl lg:w-2/4 md:w-2/4 w-full p-6 flex flex-col lg:gap-6 md:gap-6 gap-24 justify-between cursor-pointer" onClick={() => navigate('/services')}>
             <div className="flex justify-center gap-8 w-full py-6 items-center">
               <img src={WebIcon} alt='' className="filter invert lg:w-28 md:w-28 w-12 object-contain" />
               <img src={Web3Icon} alt='' className='filter invert lg:w-28 md:w-28 w-12 object-contain' />
@@ -140,7 +143,7 @@ const Body = () => {
             </div>
         </div>
 
-        <div className="bg-dark-favour rounded-3xl lg:w-1/4 md:w-1/4 p-3 w-full py-7 flex flex-col justify-between lg:gap-3 md:gap-3 gap-28">
+        <div className="bg-dark-favour rounded-3xl lg:w-1/4 md:w-1/4 p-3 w-full py-7 flex flex-col justify-between lg:gap-3 md:gap-3 gap-28" onClick={() => navigate('/contact')}>
             <div className="bg-zinc-800 rounded-full justify-center p-3 flex gap-4">
                 <BsBrowserEdge className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black'/>
                 <CiTwitter className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black' />

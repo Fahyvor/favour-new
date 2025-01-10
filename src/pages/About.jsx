@@ -1,13 +1,15 @@
-// import React from 'react';
 import Favour from '../assets/ME.jpg';
 import { CiTwitter } from 'react-icons/ci';
 import Star from '../assets/star.png';
 import { BsBrowserEdge } from "react-icons/bs";
 import Signature from '../assets/signature.png';
 import Star2 from '../assets/star-2.png';
+import { useNavigate } from 'react-router-dom'
 
 
 const About = () => {
+  
+  const navigate = useNavigate();
   return (
     <div className="bg-black text-white w-full lg:px-16 md:px-12 px-5 pt-28 pb-6">
         <div className="w-full">
@@ -111,7 +113,7 @@ const About = () => {
           </div>
 
           <div className="let_work_together flex gap-6 lg:flex-row md:flex-row flex-col" data="aos" data-aos="zoom-in">
-              <div className="bg-dark-favour rounded-3xl lg:w-1/4 md:w-1/4 p-3 w-full py-7 flex flex-col justify-between lg:gap-3 md:gap-3 gap-28">
+              <div className="bg-dark-favour rounded-3xl lg:w-1/4 md:w-1/4 p-3 w-full py-7 flex flex-col justify-between lg:gap-20 md:gap-3 gap-28" onClick={() => navigate('/contact')}>
                 <div className="bg-zinc-800 rounded-full justify-center p-3 flex gap-4">
                     <BsBrowserEdge className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black'/>
                     <CiTwitter className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black' />
@@ -146,7 +148,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-        </div>
+          </div>
         </div>
     </div>
   )

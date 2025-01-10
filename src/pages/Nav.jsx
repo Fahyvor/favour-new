@@ -26,14 +26,13 @@ const Nav = () => {
      </a>
 
      <div className='nav_right_links lg:flex md:flex gap-11 m-3 lg:justify-end w-[65%] md:w-[55%] items-center hidden'>
-      <a href="/"
-          onClick={() => setActiveNav('#')} className={activeNav === '# text-gray-950 hover:text-blue-700' ? 'active ' : ''}
+      <a href="/" className='# hover:font-bold'
           >Home</a>
-      <a href="/about" onClick={() => setActiveNav('#about')} className={activeNav === '#about text-gray-950 hover:text-blue-700' ? 'active' : ''}>About</a>
-      <a href="/portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}>Portfolio</a>
-      <a href="/contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#experience' ? 'active ' : ''} >Contact</a>
+      <a href="/about" className='#about hover:font-bold'>About</a>
+      <a href="/portfolio" className="hover:font-bold">Portfolio</a>
+      <a href="/contact" className="hover:font-bold" >Contact</a>
 
-      <div className='bg-dark-favour text-white p-3 whitespace-nowrap px-5 rounded-lg cursor-pointer hover:bg-white hover:text-black' onClick={navigate('/contact')}>
+      <div className='bg-dark-favour text-white p-3 whitespace-nowrap px-5 rounded-lg cursor-pointer hover:bg-white hover:text-black' onClick={() => navigate('/contact')}>
         <p>Let&apos;s Talk</p>
       </div>
      </div>
@@ -43,8 +42,8 @@ const Nav = () => {
       {
         showNav ? (
           <div className='flex flex-col gap-6 items-center absolute backdrop-blur bg-black bg-opacity-90 px-4 right-4 py-12 border-[1px] border-dark-favour rounded-full top-24'>
-          <a href="#"
-          onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active bg-amber-600 text-white p-2 rounded-full' : ''}><AiOutlineHome size={30}/></a>
+          <a href="/"
+           className={activeNav === '#' ? 'active bg-amber-600 text-white p-2 rounded-full' : ''}><AiOutlineHome size={30}/></a>
           <a href="/portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active bg-amber-600 text-white p-2 rounded-full' : ''}><AiOutlineUser size={30}/></a>
           <a href="/about" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active bg-amber-600 text-white p-2 rounded-full' : ''}><BiBook size={30}/></a>
           <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active bg-amber-600 text-white p-2 rounded-full' : ''}><BiMessageSquareDetail size={30}/></a>
