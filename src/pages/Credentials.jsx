@@ -126,15 +126,15 @@ const skillsArray = [
 
 const Credentials = () => {
   return (
-    <div className="pt-28 w-full flex gap-16 px-20 py-6 pb-10">
-        <div className="bg-dark-favour rounded-3xl p-6 lg:w-1/3 md:w-1/4 w-full h-3/4 sticky top-28">
+    <div className="pt-28 w-full flex lg:flex-row md:flex-row flex-col gap-16 lg:px-20 md:px-12 px-6 py-6 pb-10">
+        <div className="bg-dark-favour rounded-3xl p-6 lg:w-1/3 md:w-2/4 w-full h-3/4 lg:sticky md:sticky top-28">
             <img src={Fahyvor} alt='' className='w-full rounded-xl h-[20rem]' />
 
             <p className="text-3xl font-semibold text-center mt-5">Favour Okafor</p>
             <p className='text-center text-gray-400'>@fahyvor</p>
         </div>
 
-        <div className="lg:w-2/3 md:w-2/3 w-full">
+        <div className="lg:w-2/3 md:w-2/4 w-full">
             <div className="flex flex-col gap-4">
                 <p className='font-semibold text-xl'>ABOUT ME</p>
 
