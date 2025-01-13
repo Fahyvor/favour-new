@@ -9,7 +9,6 @@ import { useNavigate } from 'react-router-dom'
 
 const Nav = () => {
   const navigate = useNavigate();
-  const [activeNav, setActiveNav] = useState('#')
   const [showNav, setShowNav] = useState(false)
 
   const handleNavClick = () => {
@@ -43,10 +42,10 @@ const Nav = () => {
         showNav ? (
           <div className='flex flex-col gap-6 items-center absolute backdrop-blur bg-black bg-opacity-90 px-4 right-4 py-12 border-[1px] border-dark-favour rounded-full top-24'>
           <a href="/"
-           className={activeNav === '#' ? 'active  text-white p-2 rounded-full' : ''}><AiOutlineHome size={30}/></a>
-          <a href="/portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active  text-white p-2 rounded-full' : ''}><AiOutlineUser size={30}/></a>
-          <a href="/about" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active  text-white p-2 rounded-full' : ''}><BiBook size={30}/></a>
-          <a href="/contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active  text-white p-2 rounded-full' : ''}><BiMessageSquareDetail size={30}/></a>
+           className='active  text-white p-2 rounded-full'><AiOutlineHome size={30}/></a>
+          <a href="/portfolio" className='active  text-white p-2 rounded-full'><AiOutlineUser size={30}/></a>
+          <a href="/about" className='active  text-white p-2 rounded-full'><BiBook size={30}/></a>
+          <a href="/contact" className='active  text-white p-2 rounded-full'><BiMessageSquareDetail size={30}/></a>
           </div>
         ) : null
       }
