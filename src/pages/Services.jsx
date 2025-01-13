@@ -9,7 +9,7 @@ import Signature from '../assets/signature.png';
 const Services = () => {
   const navigate = useNavigate();
   return (
-    <div className="px-24 pt-28 pb-7 w-full flex flex-col gap-8">
+    <div className="lg:px-24 md:px-20 px-6 pt-28 pb-7 w-full flex flex-col gap-8">
       <div className="w-full flex lg:flex-row md:flex-row flex-col gap-4">
         <div className="bg-dark-favour rounded-3xl px-10 lg:w-1/3 md:w-1/3 w-full flex flex-col justify-between gap-6 py-24">
           <div className="flex items-center gap-4">
@@ -23,14 +23,14 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="lg:w-2/3 md:w-2/3 w-full p-6">
+        <div className="lg:w-2/3 md:w-2/3 w-full lg:p-6 md:p-4">
           <div className='flex items-center justify-center'>
-            <img src={Star2} alt='star' className='w-20 h-10 object-contain'/>
+            <img src={Star2} alt='star' className='lg:w-20 lg:h-10 md:w-8 mg:h-8 w-5 h-5 object-contain'/>
             <p className="lg:text-6xl md:text-5xl text-3xl font-bold">MY OFFERINGS</p>
-            <img src={Star2} alt='star' className='w-20 h-10 object-contain'/>
+            <img src={Star2} alt='star' className='lg:w-20 lg:h-10 md:w-8 mg:h-8 w-5 h-5 object-contain'/>
           </div>
 
-          <div className="bg-dark-favour rounded-3xl p-6 mt-4 grid grid-cols-2 gap-8">
+          <div className="bg-dark-favour rounded-3xl p-6 mt-4 grid lg:grid-cols-2 w-full gap-8">
             <div className="p-6 rounded-3xl bg-zinc-800">
               <p className="font-semibold mb-4 text-lg">WEB DEVELOPMENT</p>
 
@@ -71,11 +71,11 @@ const Services = () => {
             <p className='lg:text-6xl md:text-6xl text-4xl lg:w-3/4 md:w-3/4 w-full'>Let&apos;s work <span className='text-blue-800'>together.</span></p>
           </div>
 
-          <div className="bg-dark-favour p-2 rounded-3xl lg:w-1/4 md:w-1/4 w-full">
+          <div className="bg-dark-favour p-2 rounded-3xl lg:w-1/4 md:w-1/4 w-full" onClick={() => navigate('/credentials')}>
             <div className="">
               <img src={Signature} alt="" className='filter invert w-1/2 mx-auto my-6' /> 
             </div>
-            <div className="more-about flex items-center justify-between px-5 ">
+            <div className="more-about flex items-center justify-between px-5">
               <div className="">
                 <p className='text-sm text-gray-400 font-medium'>MORE ABOUT ME</p>
                 <p className='text-xl font-semibold'>Credentials</p>

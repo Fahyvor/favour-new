@@ -56,11 +56,11 @@ const Body = () => {
   const navigate = useNavigate();
 
   return (
-    <div className='bg-black w-full lg:px-16 md:px-12 px-7 pt-28 pb-6'>
+    <div className='bg-black w-full lg:px-16 md:px-12 px-5 pt-28 pb-6'>
       <div className="body flex gap-8 w-full lg:flex-row md:flex-row flex-col py-5" data="aos" data-aos="zoom-in">
         <div className='body-left  rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex'>
-          <div className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-6 md:gap-4 gap-8 lg:px-12 md:px-4 px-8 rounded-3xl py-12 bg-dark-favour ">
-            <div className="body-left-image rounded-tl-3xl rounded-br-3xl flex lg:w-[18rem] md:w-[18rem] w-[18rem] lg:h-[15rem] md:h-[15rem] h-[16.5rem] overflow-hidden">
+          <div className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-6 md:gap-4 gap-8 lg:px-12 md:px-4 px-5 rounded-3xl py-12 bg-dark-favour ">
+            <div className="body-left-image rounded-tl-3xl rounded-br-3xl flex lg:w-[18rem] md:w-[18rem]  lg:h-[15rem] md:h-[15rem] h-[20rem] overflow-hidden w-full">
               <img src={Fahyvor} alt="Fahyvor" className='object-cover'/>
             </div>
             <div className="body-left-text">
