@@ -16,11 +16,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   useEffect(() => {
-    // Animate the gradient background
     gsap.to('.animated-background', {
       backgroundPosition: '400% 0%',
       duration: 10,
-      repeat: -1, // Infinite loop
+      repeat: -1,
       ease: 'sine.inOut',
     });
   }, []);

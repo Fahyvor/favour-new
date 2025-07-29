@@ -15,10 +15,10 @@ const Nav = () => {
     setShowNav(!showNav);
   }
   return (
-    <div className='w-full flex px-11 my-5 backdrop-blur bg-black text-white md:px-8 items-center drop-shadow-lg
-    lg:justify-normal md:justify-normal justify-between lg:py-1 lg:mb-4 py-3 fixed mt-0 z-50 '>
+    <div className='w-full flex lg:px-11 px-6 my-5 backdrop-blur bg-black text-white md:px-8 items-center drop-shadow-lg
+    lg:justify-normal md:justify-normal justify-between lg:py-1 lg:mb-4 p fixed mt-0 z-50 '>
      <a href='/' className='cursor-pointer w-[35%] md:w-[25%]'>
-      <div className='nav_left_logo flex gap-4 lg:m-3 md:m-3 m-0 lg:my-0 md:my-0 my-4 cursor-pointer items-center justify-center' onClick={() => navigate('/')}>
+      <div className='nav_left_logo flex gap-4 lg:m-3 md:m-3 m-0 lg:my-0 md:my-0 my-4 cursor-pointer items-center lg:justify-center' onClick={() => navigate('/')}>
         <img src={ElreyLogo} alt='Elrey' className='lg:w-[20%] w-[30%] md:w-[25%] filter invert'/>
         {/* <h2 className='text-xl tracking-wider'>Elrey</h2> */}
       </div>
@@ -37,7 +37,7 @@ const Nav = () => {
      </div>
 
      <div className='mobile_nav_sectionlg:hidden md:hidden flex'>
-      {showNav ? <MdOutlineCancel size={35} onClick={handleNavClick} /> : <FaBars size={35} onClick={handleNavClick} /> }
+      {showNav ? <MdOutlineCancel size={30} onClick={handleNavClick} /> : <FaBars size={30} onClick={handleNavClick} /> }
       {
         showNav ? (
           <div className='flex flex-col gap-6 items-center absolute backdrop-blur bg-black bg-opacity-90 px-4 right-4 py-12 border-[1px] border-dark-favour rounded-full top-24'>

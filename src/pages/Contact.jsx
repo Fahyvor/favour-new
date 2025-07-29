@@ -43,9 +43,9 @@ const Contact = () => {
 
   return (
     <div className='lg:px-20 md:px-10 px-6 lg:pt-28 md:pt-28 pt-3 pb-6'>
-                                                                                                                  <div className='toastify-message'>
-                                                                                                                      <ToastContainer />
-                                                                                                                  </div>
+      <div className='toastify-message'>
+        <ToastContainer />
+      </div>
       <div className="w-full flex lg:flex-row md:flex-row flex-col gap-7">
         <div className='flex flex-col lg:w-1/3 md:w-1/3 w-full gap-8 mt-8 max-sm:gap-8'>
         <p className='uppercase text-xl font-semibold'>Contact Info</p>

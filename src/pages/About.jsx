@@ -6,6 +6,59 @@ import Signature from '../assets/signature.png';
 import Star2 from '../assets/star-2.png';
 import { useNavigate } from 'react-router-dom'
 
+const experiencesArray = [
+  {
+    date: "February 2025 -  Till date",
+    organization: "Courtney Sessions, U.S.A",
+    position: "FullStack Developer"
+  },
+  {
+    date: "October 2024 - Till date",
+    organization: "Djeffs Source, Lagos State, Nigeria",
+    position: "FullStack Developer"
+  },
+  {
+    date: "March 2025 - Till date",
+    organization: "Elrey Technologies, F.C.T, Nigeria",
+    position: "Founder/Creative Director"
+  },
+  {
+    date: "May 2024 - Jan. 2025",
+    organization: "Legum Limited, F.C.T, Abuja, Nigeria",
+    position: "Frontend Developer"
+  },
+  {
+    date: "July 2024",
+    organization: "Tech4Dev, Abia State, Nigeria",
+    position: "Tech Instructor"
+  },
+  {
+    date: "February - April 2024",
+    organization: "Ashnity Synergy Limited, Abuja, F.C.T Nigeria",
+    position: "Full Stack Web3 Developer"
+  },
+  {
+    date: "November 2023 - Febuary 2024",
+    organization: "Homly LLC, Lagos State, Nigeria",
+    position: "FullStack Developer/Team Lead"
+  },
+  {
+    date: "July - December 2023",
+    organization: "Doncodes Tech. Limited, Abia State, Nigeria",
+    position: "Frontend Developer",
+  },
+  {
+    date: "January 2020 - December 2022" ,
+    organization: "Kaays Graphix, Rivers State, Nigeria",
+    position: "Creative Director"
+  },
+  {
+    date: "September 2015 - December 2022",
+    organization: "Innolink Integrated Services, Rivers State, Nigeria",
+    position: "Senior Graphics Designer"
+  }
+]
+
 
 const About = () => {
   
@@ -37,53 +90,13 @@ const About = () => {
               <p className='text-2xl font-medium'>EXPERIENCE</p>
 
               <div className="experience_container flex flex-col gap-8 mt-9">
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">October 2024 - Till date</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Djeffs Source, Lagos State, Nigeria</p>
-                  <p className='position text-gray-500'>FullStack Developer</p>
+                {experiencesArray.map((experience, index) => (
+                  <div className="experience_card flex flex-col" key={index}>
+                  <p className="duration text-gray-500 font-medium">{experience.date}</p>
+                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>{experience.organization}</p>
+                  <p className='position text-gray-500'>{experience.position}</p>
                 </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">May 2024 - Till date</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Legum Limited, Lagos State, Nigeria</p>
-                  <p className='position text-gray-500'>Frontend Developer</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">July 2024</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Tech4Dev, Abia State, Nigeria</p>
-                  <p className='position text-gray-500'>Tech Instructor</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">February - April 2024</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Ashnity Synergy Limited, Abuja, F.C.T Nigeria</p>
-                  <p className='position text-gray-500'>FullStack Developer</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">November 2023 - Febuary 2024</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Homly LLC, Lagos State, Nigeria</p>
-                  <p className='position text-gray-500'>FullStack Developer/Team Lead</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">July - December 2023</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Doncodes Tech. Limited, Abia State, Nigeria</p>
-                  <p className='position text-gray-500'>Frontend Developer</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">January 2020 - December 2022</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Kaays Graphix, Rivers State, Nigeria</p>
-                  <p className='position text-gray-500'>Creative Director</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">September 2015 - December 2022</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Innolink Integrated Services, Rivers State, Nigeria</p>
-                  <p className='position text-gray-500'>Senior Graphics Designer</p>
-                </div>
+                ))}
               </div>
             </div>
 
@@ -92,7 +105,7 @@ const About = () => {
 
               <div className="experience_container flex flex-col gap-8 mt-9">
                 <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">2018 - 2023</p>
+                  <p className="duration text-gray-500 font-medium">2018 - 2022</p>
                   <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Bachelor Degree in Computer Science</p>
                   <p className='position text-gray-500'>Micheal Okpara Univeristity of Agriculture, Umudike</p>
                 </div>
