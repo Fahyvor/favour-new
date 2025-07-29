@@ -36,16 +36,16 @@ const Nav = () => {
       </div>
      </div>
 
-     <div className='mobile_nav_sectionlg:hidden md:hidden flex'>
+     <div className='mobile_nav_section lg:hidden md:hidden flex'>
       {showNav ? <MdOutlineCancel size={30} onClick={handleNavClick} /> : <FaBars size={30} onClick={handleNavClick} /> }
       {
         showNav ? (
-          <div className='flex flex-col gap-6 items-center absolute backdrop-blur bg-black bg-opacity-90 px-4 right-4 py-12 border-[1px] border-dark-favour rounded-full top-24'>
+          <div className='flex flex-col gap-3 items-center absolute backdrop-blur bg-black bg-opacity-90 px-4 right-4 py-6 border-[1px] border-dark-favour w-full top-12'>
           <a href="/"
-           className='active  text-white p-2 rounded-full'><AiOutlineHome size={30}/></a>
-          <a href="/portfolio" className='active  text-white p-2 rounded-full'><AiOutlineUser size={30}/></a>
-          <a href="/about" className='active  text-white p-2 rounded-full'><BiBook size={30}/></a>
-          <a href="/contact" className='active  text-white p-2 rounded-full'><BiMessageSquareDetail size={30}/></a>
+           className='active  text-white p-2 rounded-full flex gap-2 items-center'><AiOutlineHome size={20}/>Home</a>
+          <a href="/portfolio" className='active  text-white p-2 rounded-full flex gap-2 items-center'><AiOutlineUser size={20}/> Portfolio</a>
+          <a href="/about" className='active  text-white p-2 rounded-full flex gap-2 items-center'><BiBook size={20}/>About</a>
+          <a href="/contact" className='active  text-white p-2 rounded-full flex gap-2 items-center'><BiMessageSquareDetail size={20}/>Conact</a>
           </div>
         ) : null
       }
