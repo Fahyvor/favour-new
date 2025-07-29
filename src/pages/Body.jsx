@@ -1,6 +1,6 @@
 // import { useEffect, useRef, useState } from 'react';
 import Fahyvor from '../assets/ME.jpg';
-import worksThumnail from '../assets/portfolio7.png';
+import worksThumnail from '../assets/portfolio14.png';
 import Signature from '../assets/signature.png';
 import Star from '../assets/star.png';
 import Logo from '../assets/elreyLogo.png';
@@ -10,7 +10,6 @@ import { FaCode } from "react-icons/fa6";
 import { BsBrowserEdge } from "react-icons/bs";
 import { CiTwitter } from 'react-icons/ci';
 import { useNavigate } from 'react-router-dom';
-// import { FaCirclePlay } from "react-icons/fa6";
 // import { gsap } from "gsap";
 
 const Body = () => {
@@ -97,7 +96,7 @@ const Body = () => {
             <div className="bg-dark-favour p-2 lg:w-1/2 md:w-1/2 w-full rounded-3xl flex flex-col gap-7 py-5 cursor-pointer" onClick={() => (navigate('/portfolio'))}>
               <div className="flex flex-col items-center py-3">
                 <p className='text-4xl opacity-40 font-bold text-white'>MY WORKS</p>
-                <img src={worksThumnail} alt="works" className='w-1/2 z-40 -mt-3 rounded-tl-xl rounded-br-xl'/>
+                <img src={worksThumnail} alt="works" className='w-5/6 z-40  rounded-tl-xl rounded-br-xl'/>
               </div>
                 <div className="flex justify-between items-center px-5">
                     <div className="">
