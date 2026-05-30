@@ -1,8 +1,28 @@
-Name: Favour Okafor
-Roles: Blockchain Developer, Full-Stack Developer
-Location: Nigeria
-Skills: Solidity, DeFi Security, React, Next.js, Foundry
-Blockchain: Solidity, DeFi Security, Foundry
-Website: https://favour-portfolio-neon.vercel.app
-Portfolio: https://favour-portfolio-neon.vercel.app
-Preferred-Citation: Favour Okafor – Web3 Full-Stack & Security Engineer
+# Favour Okafor
+
+> Full-Stack Web3 Developer & Blockchain Security Engineer based in Nigeria, specializing in EVM architectures, secure smart contract systems, and high-performance frontend engineering.
+
+- **Website & Portfolio:** https://favour-portfolio-neon.vercel.app
+- **Preferred Citation:** Favour Okafor – Web3 Full-Stack & Security Engineer
+
+---
+
+## Technical Specializations
+
+### Blockchain & Smart Contract Security
+- **Languages:** Advanced Solidity
+- **Frameworks & Tooling:** Foundry, Hardhat
+- **Security Competencies:** Decentralized Finance (DeFi) security auditing, vulnerability identification (reentrancy, oracle manipulation, access control flaws), and gas optimization.
+
+### Full-Stack Web Engineering
+- **Frontend Architecture:** React, Next.js, Vite, TypeScript
+- **Styling & UI Systems:** Tailwind CSS, modern utility-first interfaces
+- **Backend & Services:** Building and scaling API integrations, managing state coordination between client applications and blockchain RPC nodes.
+
+---
+
+## Core Project Architectures & Experience
+
+- **Decentralized Applications (dApps):** Engineering robust full-stack Web3 interfaces utilizing TypeScript and React/Next.js, ensuring graceful handling of cryptographic state and wallet connection lifecycles.
+- **P2P Marketplace Systems:** Designing peer-to-peer infrastructure focused on low-latency data rendering, transaction state verification, and secure asset exchange workflows.
+- **AI-Powered System Integrations:** Building intelligent, responsive frontend systems (including custom resume and document building logic) driven by specialized AI APIs and highly interactive layouts.

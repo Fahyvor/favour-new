@@ -1,10 +1,11 @@
-import Favour from '../assets/ME.jpg';
+import Favour from '../assets/ME.png';
 import { CiTwitter } from 'react-icons/ci';
 import Star from '../assets/star.png';
 import { BsBrowserEdge } from "react-icons/bs";
 import Signature from '../assets/signature.png';
 import Star2 from '../assets/star-2.png';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import { useSEO } from '../utils/SEO';
 
 const experiencesArray = [
   {
@@ -18,7 +19,7 @@ const experiencesArray = [
     position: "Creative Director"
   },
   {
-    date: "February - December 2025",
+    date: "February, 2025 - Apr. 2026",
     organization: "Courtney Sessions, U.S.A",
     position: "FullStack Developer"
   },
@@ -61,110 +62,115 @@ const experiencesArray = [
 
 
 const About = () => {
-  
+  useSEO({
+    title: 'About Favour Okafor - Blockchain Developer & Web3 Expert',
+    description: 'Learn about Favour Okafor, a blockchain developer and Web3 researcher with 5+ years of experience in Solidity, DeFi, and smart contract development.',
+    keywords: 'about favour, blockchain experience, web3 developer, solidity expert, DeFi development experience',
+    ogUrl: 'https://favour-portfolio-neon.vercel.app/about',
+    canonical: 'https://favour-portfolio-neon.vercel.app/about'
+  });
+
   const navigate = useNavigate();
+  
   return (
     <div className="bg-black text-white w-full lg:px-16 md:px-12 px-5 pt-28 pb-6">
-        <div className="w-full">
-          <div className="self_summary_container flex lg:flex-row md:flex-row flex-col lg:gap-6 md:gap-6 gap-8 w-full" data="aos" data-aos="fade-in">
-            <div className="bg-dark-favour rounded-xl lg:w-1/4 md:w-1/4 p-6 w-full lg:h-[18rem] md:h-[18rem] h-[22rem] overflow-y-hidden flex justify-center items-center" data="aos" data-aos="zoom-in-left">
-              <img src={Favour} alt="Favour" className="object-cover rounded-xl w-full h-full" />
+      <section className="w-full">
+        <article className="self_summary_container flex lg:flex-row md:flex-row flex-col lg:gap-6 md:gap-6 gap-8 w-full" data="aos" data-aos="fade-in">
+          <figure className="bg-dark-favour rounded-xl lg:w-1/4 md:w-1/4 p-6 w-full lg:h-[18rem] md:h-[18rem] h-[22rem] overflow-y-hidden flex justify-center items-center" data="aos" data-aos="zoom-in-left">
+            <img src={Favour} alt="Favour Okafor - Blockchain Developer" className="object-cover rounded-xl w-full h-full" />
+          </figure>
+
+          <div className="text-white lg:w-3/4 md:w-3/4 w-full lg:p-6 md:p-6 p-0 flex flex-col lg:gap-6 md:gap-6 gap-5" data="aos" data-aos="zoom-in-right">
+            <div className='flex items-center lg:gap-0 md:gap-0 gap-3'>
+              <img src={Star2} alt='decorative star' className='lg:w-20 md:w-20 w-10 lg:h-10 md:h-20 h-10 object-contain'/>
+              <h1 className="lg:text-7xl md:text-6xl text-4xl">PROFESSIONAL PROFILE</h1>
+              <img src={Star2} alt='decorative star' className='lg:w-20 md:w-20 w-10 lg:h-10 md:h-20 h-10 object-contain'/>
             </div>
 
-            <div className="text-white lg:w-3/4 md:w-3/4 w-full lg:p-6 md:p-6 p-0 flex flex-col lg:gap-6 md:gap-6 gap-5" data="aos" data-aos="zoom-in-right">
-              <div className='flex items-center lg:gap-0 md:gap-0 gap-3'>
-                <img src={Star2} alt='star' className='lg:w-20 md:w-20 w-10 lg:h-10 md:h-20 h-10 object-contain'/>
-                <p className="lg:text-7xl md:text-6xl text-4xl">SELF SUMMARY</p>
-                <img src={Star2} alt='star' className='lg:w-20 md:w-20 w-10 lg:h-10 md:h-20 h-10 object-contain'/>
-              </div>
-
-              <div className='bg-dark-favour rounded-xl p-6'>
-                <p>FAVOUR OKAFOR</p>
-                <p className='text-justify'>I am a Nigerian-based software developer with a focus on full stack web development and blockchain development. I have a diverse range of experience having worked across various fields and industries</p>
-              </div>
-            </div>
+            <article className='bg-dark-favour rounded-xl p-6'>
+              <h2 className='text-2xl font-bold mb-3'>Favour Okafor</h2>
+              <p className='text-justify'>Senior blockchain developer and Web3 researcher with specialized expertise in Solidity, DeFi protocols, and decentralized application architecture. I bring comprehensive experience across full-stack web development and blockchain technology, having collaborated with leading organizations in both traditional software and Web3 sectors. My research interests focus on smart contract security, DeFi innovation, and scalable blockchain solutions.</p>
+            </article>
           </div>
+        </article>
 
-          <div className="experience-education-section py-4 flex lg:flex-row md:flex-row flex-col w-full gap-8" data="aos" data-aos="zoom-out">
-            <div className="bg-dark-favour lg:w-1/2 md:w-1/2 w-full rounded-xl p-6">
-              <p className='text-2xl font-medium'>EXPERIENCE</p>
-
-              <div className="experience_container flex flex-col gap-8 mt-9">
-                {experiencesArray.map((experience, index) => (
-                  <div className="experience_card flex flex-col" key={index}>
+        <section className="experience-education-section py-4 flex lg:flex-row md:flex-row flex-col w-full gap-8" data="aos" data-aos="zoom-out">
+          <article className="bg-dark-favour lg:w-1/2 md:w-1/2 w-full rounded-xl p-6">
+            <h2 className='text-2xl font-bold mb-6'>BLOCKCHAIN & WEB3 EXPERIENCE</h2>
+            <div className="experience_container flex flex-col gap-8 mt-9">
+              {experiencesArray.map((experience, index) => (
+                <div className="experience_card flex flex-col" key={index}>
                   <p className="duration text-gray-500 font-medium">{experience.date}</p>
                   <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>{experience.organization}</p>
                   <p className='position text-gray-500'>{experience.position}</p>
                 </div>
-                ))}
+              ))}
+            </div>
+          </article>
+
+          <article className="eductation_container bg-dark-favour lg:w-1/2 md:w-1/2 w-full rounded-xl p-6">
+            <h2 className='text-2xl font-bold mb-6'>EDUCATION & CERTIFICATIONS</h2>
+            <div className="experience_container flex flex-col gap-8 mt-9">
+              <div className="experience_card flex flex-col">
+                <p className="duration text-gray-500 font-medium">2018 - 2022</p>
+                <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Bachelor Degree in Computer Science</p>
+                <p className='position text-gray-500'>Micheal Okpara University of Agriculture, Umudike</p>
+              </div>
+
+              <div className="experience_card flex flex-col">
+                <p className="duration text-gray-500 font-medium">2022</p>
+                <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Frontend Development Internship</p>
+                <p className='position text-gray-500'>Side Hustle, Lagos State, Nigeria</p>
+              </div>
+
+              <div className="experience_card flex flex-col">
+                <p className="duration text-gray-500 font-medium">2009 - 2015</p>
+                <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>West Africa Senior School Certificate</p>
+                <p className='position text-gray-500'>Total Victory College</p>
               </div>
             </div>
+          </article>
+        </section>
 
-            <div className="eductation_container bg-dark-favour lg:w-1/2 md:w-1/2 w-full rounded-xl p-6">
-            <p className='text-2xl font-medium'>EDUCATION</p>
-
-              <div className="experience_container flex flex-col gap-8 mt-9">
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">2018 - 2022</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Bachelor Degree in Computer Science</p>
-                  <p className='position text-gray-500'>Micheal Okpara Univeristity of Agriculture, Umudike</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">2022</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>Internship in Frontend Development</p>
-                  <p className='position text-gray-500'>Side Hustle Internship, Lagos State, Nigeria</p>
-                </div>
-
-                <div className="experience_card flex flex-col">
-                  <p className="duration text-gray-500 font-medium">2009 - 2015</p>
-                  <p className='organization lg:text-2xl md:text-2xl text-lg font-medium'>West Africa Examination Council</p>
-                  <p className='position text-gray-500'>Total Victory College</p>
-                </div>
+        <section className="let_work_together flex gap-6 lg:flex-row md:flex-row flex-col" data="aos" data-aos="zoom-in">
+          <article className="bg-dark-favour rounded-3xl lg:w-1/4 md:w-1/4 p-3 w-full py-7 flex flex-col justify-between lg:gap-20 md:gap-3 gap-28" onClick={() => navigate('/contact')}>
+            <div className="bg-zinc-800 rounded-full justify-center p-3 flex gap-4">
+              <BsBrowserEdge className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black'/>
+              <CiTwitter className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black' />
+            </div>
+            <div className="services-offering flex items-center justify-between px-5 ">
+              <div className="">
+                <p className='text-sm text-gray-400 font-medium'>GET IN TOUCH</p>
+                <h3 className='text-xl font-semibold'>Contact Me</h3>
+              </div>
+              <div className=" flex justify-end">
+                <img src={Star} alt='star icon' className='w-1/2 filter invert h-1/2 object-cover'/>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div className="let_work_together flex gap-6 lg:flex-row md:flex-row flex-col" data="aos" data-aos="zoom-in">
-              <div className="bg-dark-favour rounded-3xl lg:w-1/4 md:w-1/4 p-3 w-full py-7 flex flex-col justify-between lg:gap-20 md:gap-3 gap-28" onClick={() => navigate('/contact')}>
-                <div className="bg-zinc-800 rounded-full justify-center p-3 flex gap-4">
-                    <BsBrowserEdge className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black'/>
-                    <CiTwitter className='lg:w-16 md:w-16 w-12 lg:h-16 md:h-16 h-12 rounded-full bg-dark-favour border-[1px] border-gray-500 lg:p-4 md:p-4 p-2 cursor-pointer hover:bg-white hover:text-black' />
-                </div>
-    
-                <div className="services-offering flex items-center justify-between px-5 ">
-                    <div className="">
-                      <p className='text-sm text-gray-400 font-medium'>STAY WITH ME</p>
-                      <p className='text-xl font-semibold'>Profiles</p>
-                    </div>
-                    <div className=" flex justify-end">
-                      <img src={Star} alt='star' className='w-1/2 filter invert h-1/2 object-cover'/>
-                    </div>
-                </div>
-              </div>
+          <article className="bg-dark-favour rounded-3xl lg:w-2/4 md:w-2/4 w-full p-6">
+            <p className='lg:text-6xl md:text-6xl text-4xl lg:w-3/4 md:w-3/4 w-full'>Let&apos;s build <span className='text-blue-800'>Web3</span> together.</p>
+          </article>
 
-              <div className="bg-dark-favour rounded-3xl lg:w-2/4 md:w-2/4 w-full p-6">
-                <p className='lg:text-6xl md:text-6xl text-4xl lg:w-3/4 md:w-3/4 w-full'>Let&apos;s work <span className='text-blue-800'>together.</span></p>
+          <article className="bg-dark-favour p-2 rounded-3xl lg:w-1/4 md:w-1/4 w-full">
+            <div className="">
+              <img src={Signature} alt="Signature" className='filter invert w-1/2 mx-auto my-6' /> 
+            </div>
+            <div className="more-about flex items-center justify-between px-5 ">
+              <div className="">
+                <p className='text-sm text-gray-400 font-medium'>CERTIFICATIONS</p>
+                <h3 className='text-xl font-semibold'>Credentials</h3>
               </div>
-
-              <div className="bg-dark-favour p-2 rounded-3xl lg:w-1/4 md:w-1/4 w-full">
-                <div className="">
-                  <img src={Signature} alt="" className='filter invert w-1/2 mx-auto my-6' /> 
-                </div>
-                <div className="more-about flex items-center justify-between px-5 ">
-                  <div className="">
-                    <p className='text-sm text-gray-400 font-medium'>MORE ABOUT ME</p>
-                    <p className='text-xl font-semibold'>Credentials</p>
-                  </div>
-                  <div className=" flex justify-end">
-                    <img src={Star} alt='star' className='w-1/2 filter invert h-1/2 object-cover'/>
-                  </div>
-                </div>
+              <div className=" flex justify-end">
+                <img src={Star} alt='star icon' className='w-1/2 filter invert h-1/2 object-cover'/>
               </div>
-          </div>
-        </div>
+            </div>
+          </article>
+        </section>
+      </section>
     </div>
-  )
+  );
 }
 
 export default About

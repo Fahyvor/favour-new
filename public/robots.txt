@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.git
+
+# Sitemaps
+Sitemap: https://favour-portfolio-neon.vercel.app/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Googlebot specific
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0

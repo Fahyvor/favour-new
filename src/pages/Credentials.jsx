@@ -1,4 +1,4 @@
-import Fahyvor from '../assets/ME.jpg';
+import Fahyvor from '../assets/ME.png';
 
 const experienceArray = [
     {

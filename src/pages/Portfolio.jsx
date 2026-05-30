@@ -129,7 +129,7 @@ const Portfolio = () => {
       githubUrl: 'https://github.com/Fahyvor/',
       siteUrl: 'https://t.me/sushimonsta_bot',
       linkText: 'Check Out The Bot',
-      isSpecial: true, // for the different height class
+      isSpecial: true,
       animation: 'flip-left'
     }
   ];
