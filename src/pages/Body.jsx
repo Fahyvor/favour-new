@@ -25,9 +25,9 @@ const Body = () => {
 
   return (
     <div className='bg-black w-full lg:px-16 md:px-12 px-5 pb-6'>
-      <header className="body flex gap-8 w-full lg:flex-row md:flex-row flex-col pt-5 pb-0 items-stretch h-full" data="aos" data-aos="zoom-in">
-        <section className='min-h-[420px] body-left rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex items-stretch'>
-          <article className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-6 md:gap-4 gap-8 lg:px-12 md:px-4 px-5 rounded-3xl py-12 bg-dark-favour">
+      <header className="body flex gap-8 w-full lg:flex-row md:flex-row flex-col pt-5 pb-0 lg:pb-4 items-stretch h-full" data="aos" data-aos="zoom-in">
+        <section className=' body-left rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex items-stretch'>
+          <article className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-6 md:gap-4 gap-8 lg:px-12 md:px-4 px-5 rounded-3xl lg:py-10 bg-dark-favour">
             <figure className="body-left-image rounded-tl-3xl rounded-br-3xl flex lg:w-[18rem] md:w-[18rem] lg:h-[15rem] md:h-[15rem] h-[20rem] overflow-hidden w-full">
               <img 
                 src={Fahyvor} 
@@ -44,7 +44,7 @@ const Body = () => {
           </article>
         </section>
 
-        <section className="body-right lg:w-1/2 md:w-1/2 w-full flex flex-col gap-1">
+        <section className="body-right lg:w-1/2 md:w-1/2 w-full flex flex-col gap-1 mt-0 lg:mt-20 md:mt-20 ">
           <div className="marquee rounded-full overflow-hidden whitespace-nowrap bg-dark-favour p-3 px-4">
             <p className='text-sm animate-marquee'>| BLOCKCHAIN PROJECTS | SMART CONTRACTS | WEB3 SOLUTIONS | DEFI DEVELOPMENT | BLOCKCHAIN PROJECTS | SMART CONTRACTS | WEB3 SOLUTIONS | DEFI DEVELOPMENT |</p>
           </div>
