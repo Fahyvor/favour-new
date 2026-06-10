@@ -135,8 +135,8 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className='w-full px-24 mt-8 max-sm:px-10 pt-28 pb-6 bg-black'>
-      <div className='flex items-center justify-center'>
+    <div className='w-full px-24 mt-8 max-sm:px-10 lg:pt-28 pt-8 pb-6 bg-black'>
+      <div className='flex items-center justify-center mt-12 lg:mt-0 md:mt-0'>
         <img src={Star2} alt='star' className='w-20 h-10 object-contain'/>
         <p className="lg:text-7xl md:text-6xl text-4xl font-bold">PORTFOLIO</p>
         <img src={Star2} alt='star' className='w-20 h-10 object-contain'/>
@@ -149,8 +149,8 @@ const Portfolio = () => {
             className='p-3 bg-dark-favour rounded-3xl flex flex-col gap-3 hover:drop-shadow-lg' 
             data-aos={item.animation}
           >
-            <div className={`rounded-3xl overflow-hidden flex justify-center items-center border-2 border-dark-favour hover:drop-shadow-lg ${item.isSpecial ? 'h-48' : ''}`}>
-              <img src={item.image} alt={`Portfolio ${item.id}`} className={item.isSpecial ? '' : 'object-cover rounded-xl'} />
+            <div className="rounded-3xl overflow-hidden border-2 border-dark-favour h-52 sm:h-60 md:h-64 flex">
+              <img src={item.image} className={item.isSpecial ? '' : 'object-cover rounded-xl'} />
             </div>
 
             <div className='px-3 flex gap-3'>

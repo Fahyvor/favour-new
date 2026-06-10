@@ -26,9 +26,9 @@ const Body = () => {
   return (
     <div className='bg-black w-full lg:px-16 md:px-12 px-5 pb-6'>
       <header className="body flex gap-8 w-full lg:flex-row md:flex-row flex-col pt-5 pb-0 lg:pb-4 items-stretch h-full" data="aos" data-aos="zoom-in">
-        <section className=' body-left rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex items-stretch'>
+        <section className=' body-left rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex items-stretch min-w-0'>
           <article className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-6 md:gap-4 gap-8 lg:px-12 md:px-4 px-5 rounded-3xl lg:py-10 bg-dark-favour">
-            <figure className="body-left-image rounded-tl-3xl rounded-br-3xl flex lg:w-[18rem] md:w-[18rem] lg:h-[15rem] md:h-[15rem] h-[20rem] overflow-hidden w-full">
+            <figure className="body-left-image rounded-tl-3xl rounded-br-3xl flex md:w-[18rem] lg:h-[15rem] md:h-[15rem] h-[20rem] overflow-hidden w-full">
               <img 
                 src={Fahyvor} 
                 alt="Favour Okafor - Blockchain Developer & Web3 Researcher" 
@@ -124,26 +124,26 @@ const Body = () => {
         </article>
       </section>
 
-      <section className="w-full flex lg:flex-row md:flex-row flex-col lg:gap-3 md:gap-3 gap-8 py-6" data="aos" data-aos="zoom-in">
+      <section className="w-full flex lg:flex-row md:flex-row flex-col lg:gap-3 md:gap-3 gap-8 py-6 mt-0" data="aos" data-aos="zoom-in">
         <article className="bg-dark-favour rounded-3xl lg:w-1/2 md:w-1/2 w-full p-6 flex lg:flex-row md:flex-row flex-col lg:gap-3 md:gap-3 gap-11">
           <div className="lg:w-1/3 md:w-1/3 w-full rounded-xl bg-zinc-900 text-center px-5 lg:py-2 md:py-2 py-8 flex flex-col justify-center">
             <p className="text-4xl font-bold">{new Date().getFullYear() - 2021}</p>
-            <span className='font-bold opacity-40 text-sm'>YEARS OF BLOCKCHAIN EXPERIENCE</span>
+            <span className='font-bold opacity-40 text-sm'>YEARS OF EXPERIENCE</span>
           </div>
 
           <div className="lg:w-1/3 md:w-1/3 w-full rounded-xl bg-zinc-900 text-center px-5 lg:py-2 md:py-2 py-8 flex flex-col justify-center">
             <p className="text-4xl font-bold">90+</p>
-            <p className='font-bold opacity-40 text-sm'>WEB3 CLIENTS WORLDWIDE</p>
+            <p className='font-bold opacity-40 text-sm'>CLIENTS WORLDWIDE</p>
           </div>
 
           <div className="lg:w-1/3 md:w-1/3 w-full rounded-xl bg-zinc-900 text-center px-5 lg:py-2 md:py-2 py-8 flex flex-col justify-center">
             <p className="text-4xl font-bold">200+</p>
-            <p className='font-bold opacity-40 text-sm'>BLOCKCHAIN PROJECTS DELIVERED</p>
+            <p className='font-bold opacity-40 text-sm'>PROJECTS DELIVERED</p>
           </div>
         </article>
 
         <article className="bg-dark-favour rounded-3xl lg:w-1/2 md:w-1/2 w-full p-6">
-          <p className='lg:text-6xl md:text-6xl text-4xl lg:w-3/4 md:w-3/4 w-full'>Let&apos;s build <span className='text-blue-800'>Web3 together.</span></p>
+          <p className='lg:text-6xl md:text-6xl text-3xl lg:w-3/4 md:w-3/4 w-full'>Let&apos;s build <span className='text-blue-800'>together.</span></p>
         </article>
       </section>
     </div>

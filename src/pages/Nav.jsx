@@ -19,7 +19,7 @@ const Nav = () => {
     lg:justify-normal md:justify-normal justify-between lg:py-1 lg:mb-4 p fixed mt-0 z-50 '>
      <a href='/' className='cursor-pointer w-[35%] md:w-[25%]'>
       <div className='nav_left_logo flex gap-4 lg:m-3 md:m-3 m-0 lg:my-0 md:my-0 my-4 cursor-pointer items-center lg:justify-center' onClick={() => navigate('/')}>
-        <img src={ElreyLogo} alt='Elrey' className='lg:w-[20%] w-[30%] md:w-[25%] filter invert'/>
+        <img src={ElreyLogo} alt='Elrey' className='lg:w-[15%] w-[25%] md:w-[25%] filter invert'/>
         {/* <h2 className='text-xl tracking-wider'>Elrey</h2> */}
       </div>
      </a>
