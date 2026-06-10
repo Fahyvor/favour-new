@@ -25,8 +25,8 @@ const Body = () => {
 
   return (
     <div className='bg-black w-full lg:px-16 md:px-12 px-5 pb-6'>
-      <header className="body flex gap-8 w-full lg:flex-row md:flex-row flex-col py-5" data="aos" data-aos="zoom-in">
-        <section className='body-left rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex'>
+      <header className="body flex gap-8 w-full lg:flex-row md:flex-row flex-col pt-5 pb-0 items-stretch h-full" data="aos" data-aos="zoom-in">
+        <section className='min-h-[420px] body-left rounded-b-xl rounded-t-xl lg:w-1/2 md:w-1/2 w-full flex-col justify-center flex items-stretch'>
           <article className="body-left-image-and-text flex lg:flex-row md:flex-row flex-col items-center lg:gap-6 md:gap-4 gap-8 lg:px-12 md:px-4 px-5 rounded-3xl py-12 bg-dark-favour">
             <figure className="body-left-image rounded-tl-3xl rounded-br-3xl flex lg:w-[18rem] md:w-[18rem] lg:h-[15rem] md:h-[15rem] h-[20rem] overflow-hidden w-full">
               <img 
@@ -44,12 +44,12 @@ const Body = () => {
           </article>
         </section>
 
-        <section className="body-right lg:w-1/2 md:w-1/2 w-full flex flex-col gap-6">
+        <section className="body-right lg:w-1/2 md:w-1/2 w-full flex flex-col gap-1">
           <div className="marquee rounded-full overflow-hidden whitespace-nowrap bg-dark-favour p-3 px-4">
             <p className='text-sm animate-marquee'>| BLOCKCHAIN PROJECTS | SMART CONTRACTS | WEB3 SOLUTIONS | DEFI DEVELOPMENT | BLOCKCHAIN PROJECTS | SMART CONTRACTS | WEB3 SOLUTIONS | DEFI DEVELOPMENT |</p>
           </div>
           <div className="flex lg:flex-row md:flex-row flex-col gap-6 py-5">
-            <article className="bg-dark-favour p-2 rounded-3xl lg:w-1/2 md:w-1/2 w-full cursor-pointer" onClick={() => navigate('/credentials')}>
+            <article className="bg-dark-favour p-2 rounded-3xl lg:w-1/2 md:w-1/2 w-full flex flex-col justify-center cursor-pointer" onClick={() => navigate('/credentials')}>
               <div className="">
                 <img src={Signature} alt="Credentials - Experience and qualifications" className='filter invert w-1/2 mx-auto my-6' /> 
               </div>
@@ -83,14 +83,14 @@ const Body = () => {
         </section>
       </header>
 
-      <section className="body-middle flex lg:flex-row md:flex-row flex-col gap-6" data="aos" data-aos="fade-up">
+      <section className="body-middle flex lg:flex-row md:flex-row flex-col gap-6 mt-0" data="aos" data-aos="fade-up">
         <article className="bg-dark-favour rounded-3xl lg:w-1/4 md:w-1/4 p-6 w-full">
           <div className="flex p-6 justify-center items-center">
             <img src={Logo} alt='Elrey Technologies Logo' className='filter invert object-contain lg:w-full md:w-full w-1/2' />
           </div>
         </article>
 
-        <article className="bg-dark-favour rounded-3xl lg:w-2/4 md:w-2/4 w-full p-6 flex flex-col lg:gap-6 md:gap-6 gap-24 justify-between cursor-pointer" onClick={() => navigate('/services')}>
+        <article className="bg-dark-favour rounded-3xl lg:w-2/4 md:w-2/4 w-full p-6 flex flex-col gap-4 justify-between cursor-pointer" onClick={() => navigate('/services')}>
           <div className="flex justify-center gap-8 w-full py-6 items-center">
             <img src={WebIcon} alt='Web Development Services' className="filter invert lg:w-28 md:w-28 w-12 object-contain" />
             <img src={Web3Icon} alt='Web3 Development Services' className='filter invert lg:w-28 md:w-28 w-12 object-contain' />
