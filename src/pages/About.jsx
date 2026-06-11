@@ -73,10 +73,10 @@ const About = () => {
   const navigate = useNavigate();
   
   return (
-    <div className="bg-black overflow-x-hidden text-white w-full lg:px-16 md:px-12 px-5 lg:pt-28 pt-2 pb-6">
+    <div className="bg-black overflow-x-hidden text-white w-full lg:px-16 md:px-12 px-5 lg:pt-0 pt-2 pb-6">
       <section className="w-full">
         <article className="self_summary_container flex lg:flex-row md:flex-row flex-col lg:gap-6 md:gap-6 gap-8 w-full min-w-0" data="aos" data-aos="fade-in">
-          <figure className="bg-dark-favour rounded-xl lg:w-1/4 md:w-1/4 p-6 w-full lg:h-[18rem] md:h-[18rem] h-[22rem] overflow-y-hidden flex justify-center items-center" data="aos" data-aos="zoom-in-left">
+          <figure className="bg-dark-favour rounded-xl lg:w-1/4 md:w-1/4 p-6 w-full lg:h-[25rem] md:h-[18rem] h-[22rem] overflow-y-hidden flex justify-center items-center" data="aos" data-aos="zoom-in-left">
             <img src={Favour} alt="Favour Okafor - Blockchain Developer" className="object-cover rounded-xl w-full h-full" />
           </figure>
 
