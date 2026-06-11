@@ -25,7 +25,7 @@ const Body = () => {
 
   return (
     <div className='bg-black w-full lg:px-16 md:px-12 px-5 pb-6'>
-      <div className="w-full lg:flex-row pt-20 flex md:flex-row">
+      <div className="w-full lg:flex-row pt-20 flex md:flex-row lg:mb-0 mb-5">
         <div className="marquee w-full rounded-full overflow-hidden whitespace-nowrap bg-dark-favour p-3 px-4">
             <p className='text-sm animate-marquee'>
               | BLOCKCHAIN PROJECTS | SMART CONTRACTS | WEB3 SOLUTIONS | DEFI DEVELOPMENT | BLOCKCHAIN PROJECTS | SMART CONTRACTS | WEB3 SOLUTIONS | DEFI DEVELOPMENT | SYSTEM DESIGN | DISTRIBUTED SYSTEMS | HIGH-AVAILABILITY ARCHITECTURE | PERFORMANCE OPTIMIZATION | SECURE APPLICATION DEVELOPMENT | CLEAN CODE PRACTICES | SOFTWARE ENGINEERING EXCELLENCE |
