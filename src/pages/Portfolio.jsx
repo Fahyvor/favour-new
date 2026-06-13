@@ -1,36 +1,30 @@
-import portfolio1 from '../assets/portfolio1.png'
-import portfolio2 from '../assets/portfolio2.png'
-import portfolio3 from '../assets/portfolio3.png'
+// import portfolio1 from '../assets/portfolio1.png'
+// import portfolio2 from '../assets/portfolio2.png'
+// import portfolio3 from '../assets/portfolio3.png'
 import portfolio4 from '../assets/portfolio4.png'
-import portfolio5 from '../assets/portfolio5.png'
+// import portfolio5 from '../assets/portfolio5.png'
 import portfolio6 from '../assets/portfolio6.png'
-import portfolio7 from '../assets/portfolio7.png'
-import portfolio8 from '../assets/portfolio8.png'
-import portfolio9 from '../assets/portfolio9.png'
+// import portfolio7 from '../assets/portfolio7.png'
+// import portfolio8 from '../assets/portfolio8.png'
+// import portfolio9 from '../assets/portfolio9.png'
 import portfolio10 from '../assets/portfolio10.png'
 import portfolio11 from '../assets/portfolio11.jpg'
 import portfolio12 from '../assets/portfolio12.png'
 import portfolio13 from '../assets/portfolio13.png'
 import portfolio14 from '../assets/portfolio14.png'
-import portfolio15 from '../assets/portfolio15.png'
+// import portfolio15 from '../assets/portfolio15.png'
 import portfolio16 from '../assets/portfolio16.png'
+import portfolio17 from '../assets/portfolio17.png'
 import Star2 from '../assets/star-2.png';
 
 const Portfolio = () => {
   const portfolioItems = [
     {
-      id: 12,
-      image: portfolio12,
-      githubUrl: "https://github.com/fahyvor",
-      siteUrl: "https://sterling-frontend.onrender.com/",
-      animation: "zoom-in"
-    },
-    {
-      id: 14,
-      image: portfolio14,
-      githubUrl: "https://github.com/Fahyvor/sleek-toast",
-      siteUrl: "https://www.npmjs.com/package/sleek-toast",
-      animation: "zoom-in"
+      id: 17,
+      image: portfolio17,
+      githubUrl: "https://github.com/Fahyvor/",
+      siteUrl: "https://courtneysessions.com/dashboard",
+      animation: 'flip-right'
     },
     {
       id: 13,
@@ -40,6 +34,15 @@ const Portfolio = () => {
       animation: "zoom-out"
     },
     {
+      id: 14,
+      image: portfolio14,
+      githubUrl: "https://github.com/Fahyvor/sleek-toast",
+      siteUrl: "https://www.npmjs.com/package/sleek-toast",
+      animation: "zoom-in",
+      linkText: 'Check Out The Library',
+      isSpecial: true,
+    },
+    {
       id: 16,
       image: portfolio16,
       githubUrl: "https://github.com/Fahyvor/url-shortner-ui",
@@ -47,33 +50,47 @@ const Portfolio = () => {
       animation: "flip-left"
     },
     {
-      id: 15,
-      image: portfolio15,
-      githubUrl: "https://github.com/Fahyvor/trading-signal-app",
-      siteUrl: "https://alpha-pulse.onrender.com",
-      animation: "zoom-in"
-    },
-    {
-      id: 1,
-      image: portfolio1,
-      githubUrl: 'https://github.com/Fahyvor/city-wide/',
-      siteUrl: 'https://city-wide-q6gz.onrender.com',
-      animation: 'zoom-out'
-    },
-    {
-      id: 2,
-      image: portfolio2,
-      githubUrl: 'https://github.com/Fahyvor/frontend-homly/',
-      siteUrl: 'https://homly-frontend-eight.vercel.app/',
-      animation: 'zoom-in'
-    },
-    {
-      id: 3,
-      image: portfolio3,
-      githubUrl: 'https://github.com/Fahyvor/flexysub-frontend/',
-      siteUrl: 'https://flexysub.ng/',
+      id: 10,
+      image: portfolio10,
+      githubUrl: 'https://github.com/Fahyvor/',
+      siteUrl: 'https://access-to-justice-five.vercel.app/',
       animation: 'flip-left'
     },
+    {
+      id: 12,
+      image: portfolio12,
+      githubUrl: "https://github.com/fahyvor",
+      siteUrl: "https://sterling-frontend.onrender.com/",
+      animation: "zoom-in"
+    },
+    // {
+    //   id: 15,
+    //   image: portfolio15,
+    //   githubUrl: "https://github.com/Fahyvor/trading-signal-app",
+    //   siteUrl: "https://alpha-pulse.onrender.com",
+    //   animation: "zoom-in"
+    // },
+    // {
+    //   id: 1,
+    //   image: portfolio1,
+    //   githubUrl: 'https://github.com/Fahyvor/city-wide/',
+    //   siteUrl: 'https://city-wide-q6gz.onrender.com',
+    //   animation: 'zoom-out'
+    // },
+    // {
+    //   id: 2,
+    //   image: portfolio2,
+    //   githubUrl: 'https://github.com/Fahyvor/frontend-homly/',
+    //   siteUrl: 'https://homly-frontend-eight.vercel.app/',
+    //   animation: 'zoom-in'
+    // },
+    // {
+    //   id: 3,
+    //   image: portfolio3,
+    //   githubUrl: 'https://github.com/Fahyvor/flexysub-frontend/',
+    //   siteUrl: 'https://flexysub.ng/',
+    //   animation: 'flip-left'
+    // },
     {
       id: 4,
       image: portfolio4,
@@ -81,13 +98,13 @@ const Portfolio = () => {
       siteUrl: 'https://speedupcreative.onrender.com/',
       animation: 'zoom-out-up'
     },
-    {
-      id: 5,
-      image: portfolio5,
-      githubUrl: 'https://github.com/Fahyvor/',
-      siteUrl: 'https://tech19.onrender.com/',
-      animation: 'flip-right'
-    },
+    // {
+    //   id: 5,
+    //   image: portfolio5,
+    //   githubUrl: 'https://github.com/Fahyvor/',
+    //   siteUrl: 'https://tech19.onrender.com/',
+    //   animation: 'flip-right'
+    // },
     {
       id: 6,
       image: portfolio6,
@@ -95,34 +112,27 @@ const Portfolio = () => {
       siteUrl: 'https://cmonlineradio.vercel.app/',
       animation: 'zoom-out-down'
     },
-    {
-      id: 7,
-      image: portfolio7,
-      githubUrl: 'https://github.com/Fahyvor/favour',
-      siteUrl: 'https://favour-plum.vercel.app/',
-      animation: 'flip-right'
-    },
-    {
-      id: 8,
-      image: portfolio8,
-      githubUrl: 'https://github.com/Fahyvor',
-      siteUrl: 'https://doncodes-tech.vercel.app/',
-      animation: 'flip-down'
-    },
-    {
-      id: 9,
-      image: portfolio9,
-      githubUrl: 'https://github.com/Fahyvor/PublicVersion',
-      siteUrl: 'https://imponexpo-first-public-version.vercel.app/help',
-      animation: 'fade-down-right'
-    },
-    {
-      id: 10,
-      image: portfolio10,
-      githubUrl: 'https://github.com/Fahyvor/',
-      siteUrl: 'https://accesstojustice.legum.tech',
-      animation: 'flip-left'
-    },
+    // {
+    //   id: 7,
+    //   image: portfolio7,
+    //   githubUrl: 'https://github.com/Fahyvor/favour',
+    //   siteUrl: 'https://favour-plum.vercel.app/',
+    //   animation: 'flip-right'
+    // },
+    // {
+    //   id: 8,
+    //   image: portfolio8,
+    //   githubUrl: 'https://github.com/Fahyvor',
+    //   siteUrl: 'https://doncodes-tech.vercel.app/',
+    //   animation: 'flip-down'
+    // },
+    // {
+    //   id: 9,
+    //   image: portfolio9,
+    //   githubUrl: 'https://github.com/Fahyvor/PublicVersion',
+    //   siteUrl: 'https://imponexpo-first-public-version.vercel.app/help',
+    //   animation: 'fade-down-right'
+    // },
     {
       id: 11,
       image: portfolio11,
@@ -131,7 +141,7 @@ const Portfolio = () => {
       linkText: 'Check Out The Bot',
       isSpecial: true,
       animation: 'flip-left'
-    }
+    },
   ];
 
   return (
