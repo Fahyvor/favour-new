@@ -2,6 +2,7 @@ import { FaFacebookF, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
 import { IoLogoTwitter } from 'react-icons/io'
 import { MdOutlineEmail } from 'react-icons/md'
+import { FaGithub } from "react-icons/fa6";
 import {useState} from 'react';
 // import emailjs from '@emailjs/browser'
 import { ToastContainer, toast } from 'react-toastify';
@@ -60,6 +61,36 @@ const Contact = () => {
             
           </a>
 
+          <a href="https://www.linkedin.com/in/fahyvor/" className='flex gap-4 items-center'> 
+            <div className='bg-dark-favour rounded-2xl p-3 drop-shadow-lg flex justify-center items-center border-1'>
+              <FaLinkedin size={20} color='white' />
+            </div>
+            <div>
+              <h2 className='font-semibold tracking-wider'>LinkedIn Handle</h2>
+              {/* <small>Elrey</small> */}
+            </div>
+          </a>
+
+          <a href="https://www.github.com/fahyvor" className='flex gap-4 items-center'> 
+            <div className='bg-dark-favour rounded-2xl p-3 drop-shadow-lg flex justify-center items-center border-1'>
+              <FaGithub size={20} color='white' />
+            </div>
+            <div>
+              <h2 className='font-semibold tracking-wider'>Github Handle</h2>
+              {/* <small>Elrey</small> */}
+            </div>
+          </a>
+
+          <a href="https://twitter.com/iamfavour3" className='flex gap-4 items-center'> 
+            <div className='bg-dark-favour rounded-2xl p-3 drop-shadow-lg flex justify-center items-center border-1'>
+              <IoLogoTwitter size={20} color='white' />
+            </div>
+            <div>
+              <h2 className='font-semibold tracking-wider'>Twitter Handle</h2>
+              {/* <small>Elrey</small> */}
+            </div>
+          </a>
+
           <a href="https://api.whatsapp.com/send/?phone=2349072033837&text&type=phone_number&app_absent=0" target="_blank" className='flex gap-4 items-center'> 
             <div className='bg-dark-favour rounded-2xl p-3 drop-shadow-lg flex justify-center items-center border-1'>
               <FaWhatsapp size={20} color='white' />
@@ -90,25 +121,7 @@ const Contact = () => {
             </div>
           </a>
 
-          <a href="https://twitter.com/iamfavour3" className='flex gap-4 items-center'> 
-            <div className='bg-dark-favour rounded-2xl p-3 drop-shadow-lg flex justify-center items-center border-1'>
-              <IoLogoTwitter size={20} color='white' />
-            </div>
-            <div>
-              <h2 className='font-semibold tracking-wider'>Twitter Handle</h2>
-              {/* <small>Elrey</small> */}
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/fahyvor/" className='flex gap-4 items-center'> 
-            <div className='bg-dark-favour rounded-2xl p-3 drop-shadow-lg flex justify-center items-center border-1'>
-              <FaLinkedin size={20} color='white' />
-            </div>
-            <div>
-              <h2 className='font-semibold tracking-wider'>LinkedIn Handle</h2>
-              {/* <small>Elrey</small> */}
-            </div>
-          </a>
+          
         </div>
 
         <div className="lg:w-3/4 md:w-3/4 w-full bg-dark-favour rounded-3xl lg:p-12 md:p-8 p-6 mt-0">
