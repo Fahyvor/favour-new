@@ -44,6 +44,7 @@ const Body = () => {
                 loading="eager"
               />
             </figure>
+            
             <div className="body-left-text">
               <p className='text-sm text-gray-400'>FULL STACK & WEB3 DEVELOPER</p>
               <h1 className='text-3xl font-bold'>Favour Okafor</h1>
