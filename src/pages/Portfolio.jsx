@@ -1,29 +1,29 @@
-// import portfolio1 from '../assets/portfolio1.png'
-// import portfolio2 from '../assets/portfolio2.png'
-// import portfolio3 from '../assets/portfolio3.png'
 import portfolio4 from '../assets/portfolio4.png'
-// import portfolio5 from '../assets/portfolio5.png'
 import portfolio6 from '../assets/portfolio6.png'
-// import portfolio7 from '../assets/portfolio7.png'
-// import portfolio8 from '../assets/portfolio8.png'
-// import portfolio9 from '../assets/portfolio9.png'
 import portfolio10 from '../assets/portfolio10.png'
 import portfolio11 from '../assets/portfolio11.jpg'
 import portfolio12 from '../assets/portfolio12.png'
 import portfolio13 from '../assets/portfolio13.png'
 import portfolio14 from '../assets/portfolio14.png'
-// import portfolio15 from '../assets/portfolio15.png'
 import portfolio16 from '../assets/portfolio16.png'
-import portfolio17 from '../assets/portfolio17.png'
+import portfolio19 from '../assets/portfolio19.png'
+import portfolio18 from '../assets/portfolio18.png'
 import Star2 from '../assets/star-2.png';
 
 const Portfolio = () => {
   const portfolioItems = [
     {
       id: 17,
-      image: portfolio17,
+      image: portfolio18,
+      githubUrl: "https://github.com/Fahyvor/recruiter",
+      siteUrl: "https://recruiter-st3s.onrender.com",
+      animation: 'flip-right'
+    },
+    {
+      id: 18,
+      image: portfolio19,
       githubUrl: "https://github.com/Fahyvor/",
-      siteUrl: "https://courtneysessions.com/dashboard",
+      siteUrl: "https://pure-breed.onrender.com",
       animation: 'flip-right'
     },
     {
