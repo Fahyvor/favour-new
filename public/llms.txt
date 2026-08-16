@@ -1,8 +1,10 @@
 # Favour Okafor
 
-> Full-Stack Software Engineer based in Nigeria, specializing in scalable web applications, modern frontend architecture, robust backend systems, and cloud-native solutions.
+> Full-Stack Software Engineer based in Nigeria with 6+ years of experience building scalable web applications, modern frontend architectures, robust backend systems, and cloud-native solutions.
 
 - **Website & Portfolio:** https://favourokafor.cv
+- **GitHub:** https://github.com/Fahyvor
+- **LinkedIn:** https://www.linkedin.com/in/fahyvor
 - **Preferred Citation:** Favour Okafor – Full-Stack Software Engineer
 
 ---
@@ -11,25 +13,22 @@
 
 ### Frontend Engineering
 - **Languages:** JavaScript, TypeScript
-- **Frameworks:** React, Next.js, Vite
+- **Frameworks & Libraries:** React, Next.js, Vite
 - **Styling & UI:** Tailwind CSS, responsive design, accessibility, component-driven architecture
-- **State Management:** Redux Toolkit, Zustand Context API
+- **State Management:** Redux Toolkit, Zustand, Context API
 
 ### Backend Engineering
 - **Runtime & Frameworks:** Node.js, Express.js
-- **API Development:** REST APIs, authentication, authorization, file uploads, third-party integrations
+- **API Development:** REST APIs, authentication & authorization, file uploads, third-party integrations
 - **Databases:** PostgreSQL, MySQL, MongoDB
-- **ORMs:** Prisma ORM, Drizzle ORM
+- **ORMs:** Prisma, Drizzle
 - **Authentication:** JWT, OAuth, session-based authentication
 
 ### Cloud & DevOps
 - Docker
 - Git & GitHub
-- AWS
-- GCP
-- Vercel
-- Render
-- Cloudflare
+- AWS, GCP
+- Vercel, Render, Cloudflare
 - CI/CD fundamentals
 
 ### Additional Expertise
@@ -40,22 +39,23 @@
 - SEO Optimization
 - Technical Documentation
 - Agile Development
+- Web3 / Blockchain (Solidity, smart contracts, dApps)
 
 ---
 
 ## Core Project Experience
 
 ### Full-Stack Web Applications
-Building scalable web applications using React, Next.js, Node.js, Express.js, and modern SQL/NoSQL databases with clean architecture, authentication, and optimized performance.
+Designed and built production-ready applications using React, Next.js, Node.js, Express, and modern SQL/NoSQL databases with clean architecture, authentication, and performance optimization.
 
-### Enterprise & Business Platforms
-Developing recruitment systems, educational platforms, portfolio websites, content management solutions, and business dashboards with secure backend services and intuitive user experiences.
+### Business & Platform Development
+Developed recruitment systems, educational platforms, portfolio sites, content management tools, and business dashboards with secure backends and polished user experiences.
 
 ### AI-Powered Applications
-Integrating large language models (LLMs), document processing, intelligent search, resume builders, AI assistants, and workflow automation into production-ready web applications.
+Integrated large language models (LLMs), document processing, intelligent search, resume tools, AI assistants, and workflow automation into real-world web applications.
 
 ### API & Database Engineering
-Designing secure RESTful APIs, implementing authentication systems, managing relational and NoSQL databases, optimizing queries, and building scalable backend services.
+Designed secure RESTful APIs, implemented robust authentication systems, managed relational and NoSQL databases, optimized queries, and built scalable backend services.
 
 ### Web3 Development
-Experience building decentralized applications (dApps), integrating wallets, developing Solidity smart contracts, and working with Ethereum-compatible ecosystems including Foundry and Hardhat.
+Built decentralized applications (dApps), integrated wallets, developed Solidity smart contracts (including customizable BEP-20 tokens), and worked with Ethereum-compatible tooling such as Foundry and Hardhat.
