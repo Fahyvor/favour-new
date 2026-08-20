@@ -160,7 +160,8 @@ const Portfolio = () => {
             data-aos={item.animation}
           >
             <div className="rounded-3xl overflow-hidden border-2 border-dark-favour h-52 sm:h-60 md:h-64 flex">
-              <img src={item.image} loading="lazy" decoding="async" className={item.isSpecial ? '' : 'object-cover rounded-xl'} />
+              <img src={item.image} loading={item.id < 3 ? "eager" : "lazy"} fetchPriority={item.id === 0 ? "high" : "auto"}
+    decoding="async" className={item.isSpecial ? '' : 'object-cover rounded-xl'} />
             </div>
 
             <div className='px-3 flex gap-3'>
