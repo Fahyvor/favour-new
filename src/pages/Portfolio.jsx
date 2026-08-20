@@ -15,8 +15,8 @@ const Portfolio = () => {
     {
       id: 17,
       image: portfolio18,
-      githubUrl: "https://github.com/Fahyvor/recruiter",
-      siteUrl: "https://recruiter-st3s.onrender.com",
+      githubUrl: "https://github.com/Fahyvor/match-nexx",
+      siteUrl: "https://match-nexx.onrender.com",
       animation: 'flip-right'
     },
     {
@@ -160,7 +160,7 @@ const Portfolio = () => {
             data-aos={item.animation}
           >
             <div className="rounded-3xl overflow-hidden border-2 border-dark-favour h-52 sm:h-60 md:h-64 flex">
-              <img src={item.image} className={item.isSpecial ? '' : 'object-cover rounded-xl'} />
+              <img src={item.image} loading="lazy" decoding="async" className={item.isSpecial ? '' : 'object-cover rounded-xl'} />
             </div>
 
             <div className='px-3 flex gap-3'>
