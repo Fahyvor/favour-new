@@ -16,7 +16,7 @@ const Portfolio = () => {
       id: 17,
       image: portfolio18,
       githubUrl: "https://github.com/Fahyvor/match-nexx",
-      siteUrl: "https://match-nexx.onrender.com",
+      siteUrl: "https://match-nexx.click",
       animation: 'flip-right'
     },
     {
