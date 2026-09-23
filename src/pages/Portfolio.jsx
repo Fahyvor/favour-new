@@ -8,6 +8,7 @@ import portfolio14 from '../assets/portfolio14.png'
 import portfolio16 from '../assets/portfolio16.png'
 import portfolio19 from '../assets/portfolio19.png'
 import portfolio18 from '../assets/portfolio18.png'
+import portfolio20 from '../assets/portfolio20.png'
 import Star2 from '../assets/star-2.png';
 
 const Portfolio = () => {
@@ -25,6 +26,15 @@ const Portfolio = () => {
       githubUrl: "https://github.com/Fahyvor/",
       siteUrl: "https://pure-breed.onrender.com",
       animation: 'flip-right'
+    },
+    {
+      id: 20,
+      image: portfolio20,
+      githubUrl: "https://github.com/Fahyvor/nub-stack",
+      siteUrl: "https://www.npmjs.com/package/nub-stack",
+      animation: "zoom-in",
+      linkText: 'Check Out The Library',
+      isSpecial: true,
     },
     {
       id: 13,
