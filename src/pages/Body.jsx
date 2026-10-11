@@ -1,5 +1,5 @@
 import Fahyvor from '../assets/ME.png';
-import worksThumnail from '../assets/portfolio14.png';
+import worksThumnail from '../assets/portfolio14.webp';
 import Signature from '../assets/signature.png';
 import Star from '../assets/star.png';
 import Logo from '../assets/elreyLogo.png';
