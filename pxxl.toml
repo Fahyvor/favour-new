@@ -1,4 +1,4 @@
-output_dir = "dist"
+version = 1
 
 [routing]
 spa = true
